@@ -88,7 +88,7 @@ const Map = () => {
 
             <Circle center={center} pathOptions={fillBlueOptions} radius={100}/>
 
-            <CircleMarker center={[49.2856, -123.1115]} pathOptions={redOptions} radius={10}>
+            <CircleMarker center={[49.2856, -123.1115]} pathOptions={redOptions} radius={1}>
                 <Popup>Waterfront</Popup>
             </CircleMarker>
 
