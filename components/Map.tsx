@@ -67,7 +67,7 @@ const Map = () => {
         <header 
         style={{ 
             textAlign: 'center',  
-            backgroundColor: 'black', 
+            backgroundColor: 'darkblue', 
             padding: '13px' }}>
 
            <h1>Canada Line - Week 1 Example</h1>
