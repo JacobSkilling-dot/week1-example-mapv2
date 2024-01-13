@@ -3,7 +3,6 @@ import {MapContainer, TileLayer, Marker, Popup, Polyline, Circle, CircleMarker} 
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet';
 
-const icon = L.icon({ iconUrl: "/images/map-marker.webp", iconSize: [40, 40] });
 
 const polyline:[number, number][] = [
     [49.2856, -123.1115],
@@ -64,21 +63,26 @@ const center:[number, number] = [49.25299, -123.00600];
 
 const Map = () => {
     return(
+        <div>
+        <header 
+        style={{ 
+            textAlign: 'center',  
+            backgroundColor: 'black', 
+            padding: '13px' }}>
+
+           <h1>Canada Line - Week 1 Example</h1>
+        </header>
+            
         <MapContainer
         style= {{height: "100vh"}}
         center={[49.24966, -123.00934]} zoom={13} scrollWheelZoom={false}
         >
             <TileLayer
-            attribution='&copy; <a href="github repo link here">'
+            attribution='&copy; <a href="https://github.com/JacobSkilling-dot/week1-example-mapv2.git">'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
 
-            <Marker position={[49.24966, -123.00934]} icon={icon}>
-                <Popup>
-                    BCIT
-                </Popup>
-
-            </Marker>
+        
             <Polyline pathOptions={redOptions} positions={polyline}/>
             <Polyline pathOptions={fillBlueOptions} positions={multiPolyline}/>
 
@@ -148,6 +152,7 @@ const Map = () => {
                 <Popup>Richmond-Brighouse</Popup>
             </CircleMarker>
         </MapContainer>
+            </div>
 
     )
 }
