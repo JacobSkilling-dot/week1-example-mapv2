@@ -86,9 +86,9 @@ const Map = () => {
             <Polyline pathOptions={redOptions} positions={polyline}/>
             <Polyline pathOptions={fillBlueOptions} positions={multiPolyline}/>
 
-            <Circle center={center} pathOptions={fillBlueOptions} radius={100}/>
+            <Circle center={center} pathOptions={fillBlueOptions} radius={10}/>
 
-            <CircleMarker center={[49.2856, -123.1115]} pathOptions={redOptions} radius={1}>
+            <CircleMarker center={[49.2856, -123.1115]} pathOptions={redOptions} radius={5}>
                 <Popup>Waterfront</Popup>
             </CircleMarker>
 
