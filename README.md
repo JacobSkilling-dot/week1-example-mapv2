@@ -1,6 +1,6 @@
 # Exercise 1
 
-## Created by Jacob S
+## Created by Jacob Skilling
 
 > This is a map of the canada line with all the stations from Waterfront to YVR including; 
 
